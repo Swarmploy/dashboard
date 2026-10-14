@@ -33,7 +33,6 @@ sudo chown -R $USER:$USER /etc/dokploy/ssh
 `;
 
 export const getPublicIpWithFallback = async () => {
-	// @ts-expect-error
 	let ip = null;
 	try {
 		ip = await publicIpv4();
